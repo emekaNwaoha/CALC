@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content type" charset=utf-8>
+    <meta name="viewport" content=width=device-width-initial-scale=1>
+    <title>My Beautiful Js calculatorApp</title>
+    <script src=calc.js>
+    </script>
+</head>
+
+<body>
+    <h2>My Javascript Calc. App
+    </h2>
+    <main>
+        <form name="calculator">
+            <table>
+                <input type="text" name="value" id="display" placeholder="0" required="readonly" disabled />
+
+                <tr>
+                    <td>
+                        <input type="button" id="clr" value="c" name="clear"
+                            onclick="document.getElementById('display').value=''" />
+                    </td>
+                    <td>
+                        <input type="button" id="plus" name="plus" value="+" onclick="dis('+')" />
+                    </td>
+                    <td>
+                        <input type="button" id="divide" name="divide" value="/" onclick="dis('/')" />
+                    </td>
+                    <td>
+                        <input type="button" id="evaluate()" name="evaluate" value="=" onclick="eval()" />
+                    <td>
+                        <input type="button" id="times" name="times" value="*" />
+                    </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" id="one" name="one" value="1" />
+                    </td>
+                    <td>
+                        <input type="button" id="two" name="two" value="2" />
+                    </td>
+                    <td>
+                        <input type="button" id="three" name="three" value="3" />
+                    </td>
+                    <td>
+                        <input type="button" id="four" name="four" value="4" />
+                    </td>
+                    <td>
+                        <input type="button" id="five" name="five" value="5" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" id="six" name="six" value="6" />
+                    <td>
+                        <input type="button" id="seven" name="seven" value="7" />
+                    </td>
+                    <td>
+                        <input type="button" id="eight" name="eight" value="8" />
+                    </td>
+                    <td>
+                        <input type="button" id="nine" name="nine" value="9" />
+                    </td>
+                    <td>
+                        <input type="button" id="zero" name="nine" value="0" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" id="decimal" name="decimal" value="." />
+                    </td>
+                    <td>
+                        <input type="button" id="delete" name="delete" value="Del"/>
+                    </td>
+                    <td>
+                        <input type="button" id="bra-open" name="bra-open" value="("/>
+                    </td>
+                    <td>
+                        <input type="button" id="bra-close" name="bra-close" value=")"/>
+                    </td>
+                    <td>
+                        <input type="button" id="minus" name="minus" value="-"/>
+                    </td>
+                </tr>
+            </table>
+    </main>
+    <style>
+        main {
+            background-color: cornflowerblue;
+            width: 335px;
+            box-sizing: border-box;
+            border-style: solid;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+
+        input[type="button"] {
+            cursor: pointer;
+            outline: none;
+            border-radius: 100px;
+            background-color: blue;
+            color: cornsilk;
+            border-color: black;
+            width: 55px;
+            height: 30px;
+            align-content: center;
+            padding-bottom: 5px;
+            margin-right: 2px;
+        }
+
+        input[type='text'] {
+            cursor: pointer;
+            outline: none;
+            border-radius: 100px;
+            text-align: left;
+            background-color: greenyellow;
+            color: black;
+            border-color: black;
+            width: 300px;
+            margin-bottom: 10px;
+            margin-right: auto;
+            display: block;
+            height: 30px;
+            font-size: larger;
+        }
+
+        body {
+            background-color: mediumpurple;
+            width: 10px;
+            margin-left: 350px;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
